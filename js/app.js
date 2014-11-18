@@ -43,9 +43,8 @@ function hideWin() {
 
 
 function shuffleCards(){
-	console.log(numbers);
+
 	var shuffledNumbers = _.shuffle(numbers); //shuffles the numbers array
-	console.log(shuffledNumbers);
 
 	//finds the associated shuffledNumbers and stores 8 numbers into an array
 	for (var i = 0; i < 8; i++){
@@ -59,7 +58,7 @@ function shuffleCards(){
 	}
 
 	imgArray = _.shuffle(imgArray);	//shufles the 16 tiles
-	console.log(imgArray);
+
 	return imgArray;
 }
 
