@@ -1,0 +1,56 @@
+/* main stylesheet */
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,700);
+/*@import url(http://fonts.googleapis.com/css?family=Handlee);
+@import url(http://fonts.googleapis.com/css?family=Walter+Turncoat);*/
+
+
+
+
+body {
+    font-family: 'Raleway', 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+/*display image in inline*/
+img {
+    display: inline;
+    width: 140px;
+    margin: 2px;
+    cursor: pointer;
+
+}
+
+#board {
+  width: 600px;
+  height: 600px;
+  margin: 0 auto;
+  margin-top: 10px;
+  float: left;
+  position: absolute;
+  top: 60px;
+}
+
+#wonGame {
+  font-size: 100px;
+  color: red;
+}
+
+.border {
+    border: 1px solid black;
+    padding: 2px;
+}
+
+
+.intro p {
+  position: relative;
+  width: 500px;
+  
+}
+
+.feedback p {
+  position: relative;
+  left: 625px;
+}
+
+
+

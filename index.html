@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Memory Game</title>
+        <link rel="stylesheet" href="css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/main.css"/>
+    </head>
+    <body>
+        <main class="container">
+            <h1>Let's Play a Memory Game!</h1>
+            <div class="instructions">
+                <h3>How to Play:</h3>
+                <p>There are a total of 16 tiles. The goal of this game is to match 8 of the tiles to its other pair. If you click one
+                    tile, it will turn face up and reveal an image. You can only click two tiles at a time. If the two tiles' images
+                     match, they will stay on it's image side. If the two tiles do not match, it will flip back to its orignal state. 
+                </p>
+                <p><button class="btn btn-primary" id="playButton">Let's Play!</button></p>
+            </div>
+            <div class="game">
+                <div class="feedback">
+                    <p id="timer">Time Lapsed: 0 seconds</p>
+                    <p id="counter">0 Clicks</p>
+                    <p id="matches">0 pairs found...</p>
+                    <p id="nomatches">0 failed attempts!</p>
+                    <p><button class="btn btn-primary" id="newGame">Start New Game!</button></p>
+                </div>
+                <table id="board">
+                    <tr id="row1"></tr>
+                    <tr id="row2"></tr>
+                    <tr id="row3"></tr>
+                    <tr id="row4"></tr>
+                </table>
+            </div>
+            <div class="win">
+                <p id="wonGame">CONGRATULATIONS! YOU WON THE GAME!!</p>
+                <p id="feedback"></p>
+                <button class="btn btn-primary" id="playAgain">Play Again!</button>
+            </div> 
+        </main>
+
+        <script src="js/jquery-2.1.1.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.min.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/app.js"></script>
+    </body>
+</html>
+
