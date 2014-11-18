@@ -29,7 +29,10 @@ function onReady(){
 	})
 
 	$('#newGame').click(function(){
+		$('.feedback').hide();
+		$('.win').hide();
 		location.reload();
+
 	})
 }
 
@@ -162,10 +165,11 @@ function winGame() {
 	$('#feedback').html("You solved the game in " + noMatch + " attempts! ");
 	$('#feedback').append("It took you " + elapsedSeconds +" seconds! ");
 	$('#feedback').append("You solved it in " + count + " clicks.")
-	$('.game').empty();
+	$('.game').hide();
 	window.clearInterval(timer);
 	$('.win').fadeIn(500);
 	$('#playAgain').click(function(){
+		$('.game').hide();
 		location.reload();
 	})	
 }
